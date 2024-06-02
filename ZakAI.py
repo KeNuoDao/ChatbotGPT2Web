@@ -3,6 +3,9 @@ import torch
 import os
 from datasets import load_dataset
 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
+
 # Loads DailyDialog dataset
 dataset = load_dataset("daily_dialog")
 
